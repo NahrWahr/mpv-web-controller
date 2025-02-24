@@ -1,0 +1,13 @@
+[Unit]
+Description=mpv Controller Web Server
+After=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/yourusername/mpv-controller
+ExecStart=/home/yourusername/venv/bin/python controller.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
