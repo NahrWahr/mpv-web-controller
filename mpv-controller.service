@@ -6,8 +6,8 @@ After=graphical-session.target
 Type=simple
 WorkingDirectory=/home/yourusername/mpv-controller
 ExecStart=/home/yourusername/venv/bin/python controller.py
-Restart=always
-RestartSec=5
+Restart=never
+RestartSec=10
 
 [Install]
 WantedBy=default.target
